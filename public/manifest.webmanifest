@@ -1,0 +1,10 @@
+{
+  "name": "Teen Seeti",
+  "short_name": "Teen Seeti",
+  "description": "Counts the pressure cooker's whistles so you don't have to.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf6ee",
+  "theme_color": "#2b1d14",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

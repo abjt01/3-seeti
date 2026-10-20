@@ -5,7 +5,9 @@
   "description": "Put the phone on the counter and walk away: an open audio model counts the pressure cooker's whistles and tells you when to turn off the gas",
   "type": "module",
   "scripts": {
-    "dev": "next dev -p 4300",
+    "predev": "node scripts/copy-mediapipe.mjs",
+    "dev": "next dev -p 4310",
+    "prebuild": "node scripts/copy-mediapipe.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
