@@ -7,6 +7,8 @@ Put the phone on the counter and walk away. 3 Seeti counts the pressure cooker's
 
 In an Indian kitchen, the recipe isn't in minutes, it's in whistles: dal is 3, rajma is 6, rice is 2. So someone stands near the stove counting, or wanders off, loses count, and comes back to burnt dal. Here the counting is done by YAMNet, an open audio model from Google, running in the browser on the phone. No sound is recorded or sent anywhere, and after the first visit it works with no internet.
 
+**Try it:** [three-seeti.onrender.com](https://three-seeti.onrender.com). It's on a free plan, so the first load after a quiet spell takes about half a minute.
+
 ![Recording: the recorded kitchen, run fast: three whistles counted, the kettle ignored, then "Gas band karo!"](docs/demo.gif)
 
 <table>
