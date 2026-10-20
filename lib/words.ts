@@ -13,7 +13,8 @@ export function whistleLine(n: number, target: number, lang: Lang): string {
     return lang === "hi" ? `${ordinal(n, lang)} seeti. Gas band kar do!` : `${ordinal(n, lang)} whistle. Turn off the gas!`;
   }
   const left = target - n;
-  if (lang === "hi") return `${ordinal(n, lang)} seeti. ${left === 1 ? "Bas ek aur." : `${COUNT_HI[left] || left} aur.`}`;
+  const word = String(COUNT_HI[left] || left);
+  if (lang === "hi") return `${ordinal(n, lang)} seeti. ${left === 1 ? "Bas ek aur." : `${word[0].toUpperCase()}${word.slice(1)} aur.`}`;
   return `${ordinal(n, lang)} whistle. ${left === 1 ? "One more to go." : `${left} more to go.`}`;
 }
 

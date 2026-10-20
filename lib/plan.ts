@@ -13,7 +13,8 @@ ${DISHES.map((d) => `- ${d.dish}: ${d.whistles}${d.simmer ? `, then ${d.simmer} 
 Reply with JSON only:
 {"dish": "short dish name in English", "whistles": 1-12, "simmer": minutes on low after the last whistle (0 if none), "note": "one short practical sentence, or empty"}
 
-If it isn't something cooked in a pressure cooker, reply {"dish": "...", "whistles": 0, "note": "why"}.`;
+Answer for exactly what they have. If they say it isn't soaked ("bina bhigoye", "not soaked", "forgot to soak"), give the count for unsoaked and say in the note that soaking next time saves gas. Don't ask questions back.
+Most dals, legumes, rice dishes, vegetables (kathal, lauki, arbi, chana, palak for saag...), meat and eggs are commonly pressure-cooked in Indian homes. Only for things nobody cooks in a pressure cooker (pizza, salad, tea, bread) reply {"dish": "...", "whistles": 0, "note": "why, in a few words"}.`;
 
 export type PlanResult = { plan: Plan | null; why?: string };
 

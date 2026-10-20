@@ -1,6 +1,6 @@
 {
-  "name": "Teen Seeti",
-  "short_name": "Teen Seeti",
+  "name": "3 Seeti",
+  "short_name": "3 Seeti",
   "description": "Counts the pressure cooker's whistles so you don't have to.",
   "start_url": "/",
   "display": "standalone",

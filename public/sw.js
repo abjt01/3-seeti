@@ -1,5 +1,5 @@
 // Keeps the app, the audio model and its runtime on the phone, so listening works with no internet.
-const CACHE = "teen-seeti-v1";
+const CACHE = "3-seeti-v1";
 const CORE = ["/", "/models/yamnet.tflite", "/capture-worklet.js", "/manifest.webmanifest", "/icon.svg"];
 
 self.addEventListener("install", (e) => {

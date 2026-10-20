@@ -8,7 +8,7 @@ const display = Baloo_2({ subsets: ["latin", "devanagari"], weight: ["600", "700
 const body = Hind({ subsets: ["latin", "devanagari"], weight: ["400", "500", "600"], variable: "--font-body" });
 
 export const metadata: Metadata = {
-  title: "Teen Seeti",
+  title: "3 Seeti",
   description: "Put the phone on the counter and walk away. An open audio model counts the pressure cooker's whistles and tells you when to turn off the gas. It listens on the phone, offline.",
   manifest: "/manifest.webmanifest",
 };
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <rect x="14.5" y="9" width="3" height="4" rx="1" fill="currentColor" />
               <path d="M16 7c-2-2 2-3 0-5M20 7c-2-2 2-3 0-5M12 7c-2-2 2-3 0-5" stroke="var(--accent)" strokeWidth="1.6" fill="none" strokeLinecap="round" />
             </svg>
-            Teen Seeti
+            3 Seeti
           </Link>
         </header>
         {children}
