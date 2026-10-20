@@ -1,0 +1,36 @@
+{
+  "name": "teen-seeti",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Put the phone on the counter and walk away: an open audio model counts the pressure cooker's whistles and tells you when to turn off the gas",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 4300",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types \"test/unit/*.test.ts\"",
+    "test:api": "node --test --test-concurrency=1 --experimental-strip-types test/api.test.ts",
+    "test:e2e": "node --test --test-concurrency=1 --experimental-strip-types test/e2e.test.ts"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@mediapipe/tasks-audio": "^1.1.1",
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.2",
+    "puppeteer-core": "^25.15.0",
+    "typescript": "^6.0.3"
+  }
+}
