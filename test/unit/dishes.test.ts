@@ -53,7 +53,7 @@ describe("holding a model's answer to limits", () => {
   it("caps the simmer time and fills in the dish name", () => {
     const p = checkPlan({ whistles: 5, simmer: 300 }, "kala chana");
     assert.equal(p?.simmer, 45);
-    assert.equal(p?.dish, "kala chana");
+    assert.equal(p?.dish, "Kala chana");
   });
 });
 

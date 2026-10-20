@@ -70,7 +70,8 @@ export function checkPlan(raw: unknown, fallbackDish: string): Plan | null {
   const whistles = Math.round(Number(r.whistles));
   const simmer = Math.round(Number(r.simmer ?? 0));
   if (!Number.isFinite(whistles) || whistles < 1 || whistles > 12) return null;
-  const dish = typeof r.dish === "string" && r.dish.trim() ? r.dish.trim().slice(0, 60) : fallbackDish.slice(0, 60);
+  const named = typeof r.dish === "string" && r.dish.trim() ? r.dish.trim().slice(0, 60) : fallbackDish.trim().slice(0, 60);
+  const dish = named.charAt(0).toUpperCase() + named.slice(1);
   const note = typeof r.note === "string" ? r.note.replace(/\s+/g, " ").trim().slice(0, 160) : "";
   return {
     dish,
